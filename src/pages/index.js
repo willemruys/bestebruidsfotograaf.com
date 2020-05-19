@@ -1,13 +1,10 @@
-import React from "react"
-
-
-
-import Layout from "../components/layout"
-import About from "../components/about/about.component"
-import HeroHomepage from "../components/hero-homepage/hero-homepage"
+import React from "react";
+import Layout from "../components/layout";
+import About from "../components/about/about.component";
+import HeroHomepage from "../components/hero-homepage/hero-homepage";
 // import Video from "../components/video/video.component"
-import GalleryHomePage from "../components/gallery/gallery-homepage.component.jsx"
-import Review from "../components/review/review.component"
+import GalleryHomePage from "../components/gallery/gallery-homepage.component.jsx";
+import Review from "../components/review/review.component";
 //import BlogHomePageComponent from "../components/blog-homepage/blog-homepage.component"
 
 const IndexPage = () => (
@@ -19,4 +16,4 @@ const IndexPage = () => (
 </Layout>
 )
 
-export default IndexPage
+export default IndexPage;

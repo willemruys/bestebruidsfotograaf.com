@@ -1,9 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bestebruidsfotograaf",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website for Asim Bari ",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": "13.8.0"
+  },
+  "author": "Willem Ruys <wmruys@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.20.35",
