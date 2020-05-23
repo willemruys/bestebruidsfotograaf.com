@@ -1,11 +1,7 @@
 import React from "react"
 
-// background header
-import background from "../../images/hero_1.jpg"
-import Button from "../button/button.component"
-
 const Hero = (props) => (
-    <div class="ftco-blocks-cover-1">
+  <div class="ftco-blocks-cover-1">
   <div class="site-section-cover overlay" style={{ backgroundImage: `url(${props.background})` }} >
     <div class="container">
       <div class="row align-items-center">

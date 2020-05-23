@@ -37,21 +37,19 @@ const Layout = ({ children }) => {
 <main>{children}</main>
   <footer class="site-footer">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
+    <div class="row pt-1 mt-1 text-center">
+      <div class="col-md-12">
         <h2 class="footer-heading mb-2">Asim bari bruidsfotografie</h2>
         <p style={{fontSize: '12px'}}><i>Creatief, artistiek en een tikje humor</i></p>
-      </div>
-      <div class="col-lg-8 ml-auto">
-        <div class="row">
-        </div>
+        <p style={{fontSize: '12px'}}> +31 (0) 6 1515 1555</p>
+        <p style={{fontSize: '12px'}}>  info@asimbari.com</p>
       </div>
     </div>
     <div class="row pt-1 mt-1 text-center">
       <div class="col-md-12">
-        <div class="border-top pt-5">
+        <div class="border-top pt-1">
           <p>
-            Copyright &copy; {showYear()} All rights reserved | Template from<a href="https://colorlib.com" target="_blank" >Colorlib</a> | web development by Willem Ruys
+            Copyright &copy; {showYear()} All rights reserved
           </p>
         </div>
       </div>
@@ -68,3 +66,7 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+
+
+

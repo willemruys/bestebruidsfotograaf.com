@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero/hero.component"
-import Gallery from "../components/gallery/gallery.component"
-import backgroundImage from "../images/header/Ceremony.jpg"
+import Gallery from "../components/gallery/gallery-homepage.component"
+import backgroundImage from "../images/header/Ceremony-min.jpg"
 
 const GalleryPage = () => (
     <Layout>

@@ -1,0 +1,83 @@
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+  }
+  
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .carousel-wrapper{
+      visibility: hidden;
+      display: none;
+  }
+  .button-wrapper {
+      margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px ) {
+    .carousel-wrapper-mobile {
+        visibility: hidden;
+        display: none;
+    }
+    .button-wrapper {
+        margin-top: 5rem;
+    }
+}
+
+
+.gallery-card-image-wrapper {
+  position: relative;
+  opacity: 100%;
+}
+
+.description {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-card-image-wrapper:hover .description{
+  opacity: 80%;
+}
+
