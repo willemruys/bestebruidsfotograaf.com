@@ -9,11 +9,7 @@ export default function About() {
     about: file(relativePath: {eq: "asim-profiel/asim.jpg"}) {
       childImageSharp {
         fluid {
-          src
-          srcSet
-          aspectRatio
-          base64
-          originalImg
+          ...GatsbyImageSharpFluid
         }
       }
     }

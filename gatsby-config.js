@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/reponame",
   
   siteMetadata: {
     title: `Bestebruidsfotograaf`,
@@ -8,6 +7,8 @@ module.exports = {
   },
 
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -16,8 +17,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolioImages`,
+        path: `${__dirname}/src/images/gallery`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

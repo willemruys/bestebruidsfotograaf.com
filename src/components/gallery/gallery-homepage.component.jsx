@@ -1,9 +1,9 @@
 import React from "react";
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql} from 'gatsby';
+import Button from '../button/button.component';
 
-import Img from 'gatsby-image'
-import { useStaticQuery, graphql, Link} from 'gatsby';
-import './gallery.styles.css'
-import Button from '../button/button.component'
+import './gallery.styles.css';
 
 export default function GalleryHomePage() {
 
@@ -111,9 +111,9 @@ export default function GalleryHomePage() {
       <div class="row-gallery"> 
       <div class="column-gallery">
         <div>
-          <div class="gallery-card-image-wrapper">
+          <div className="image-wrapper">
             <Img fluid={data.maartenEnHeiline.childImageSharp.fluid} alt=""/>
-            <div class="description">Maarten en Heiline</div>
+            <div className="description-text">Maarten en Heiline</div>
           </div>
           <div>
           <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/maarten-en-heiline"></Button>
@@ -122,9 +122,9 @@ export default function GalleryHomePage() {
       </div>
       <div class="column-gallery">
         <div>
-          <div class="gallery-card-image-wrapper">
+          <div className="image-wrapper">
             <Img fluid={data.mathijsEnNoortje.childImageSharp.fluid} alt=""/>
-            <div class="description">Mathijs en Noortje</div>
+            <div className="description-text">Mathijs en Noortje</div>
           </div>
           <div>
           <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/mathijs-en-noortje"></Button>
@@ -133,9 +133,9 @@ export default function GalleryHomePage() {
       </div>
       <div class="column-gallery">
         <div>
-          <div class="gallery-card-image-wrapper">
+          <div className="image-wrapper">
             <Img fluid={data.omerEnAyse.childImageSharp.fluid} alt=""/>
-            <div class="description">Omery en Ayse</div>
+            <div className="description-text">Omery en Ayse</div>
           </div>
           <div>
           <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/omer-en-ayse"></Button>
@@ -146,9 +146,9 @@ export default function GalleryHomePage() {
       <div class="row-gallery">
         <div class="column-gallery">
           <div>
-            <div class="gallery-card-image-wrapper">
+            <div className="image-wrapper">
               <Img fluid={data.arthurEnYvonne.childImageSharp.fluid} alt=""/>
-              <div class="description">Arthur en Yvonne</div>
+              <div className="description-text">Arthur en Yvonne</div>
             </div>
             <div>
           <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/arthur-en-yvonne"></Button>
@@ -157,9 +157,9 @@ export default function GalleryHomePage() {
         </div> 
         <div class="column-gallery">
           <div>
-            <div class="gallery-card-image-wrapper">
+            <div className="image-wrapper">
               <Img fluid={data.manuelEnMarleen.childImageSharp.fluid} alt=""/>
-              <div class="description">Manuel en Marleen</div>
+              <div className="description-text">Manuel en Marleen</div>
             </div>
             <div>
             <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/manuel-en-marleen"></Button>
@@ -168,9 +168,9 @@ export default function GalleryHomePage() {
         </div> 
         <div class="column-gallery">
           <div>
-            <div class="gallery-card-image-wrapper">
+            <div className="image-wrapper">
               <Img fluid={data.martijnEnMarscha.childImageSharp.fluid} alt=""/>
-              <div class="description">Martijn en Marscha</div>
+              <div className="description-text">Martijn en Marscha</div>
             </div>
             <div>
             <Button CTA="bekijk hele album" class="btn btn-light" ctaLink="/portfolio/martijn-en-marscha"></Button>
