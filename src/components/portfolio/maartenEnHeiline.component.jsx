@@ -39,31 +39,18 @@ return (
         <h2 class="serif">Maarten en Heiline</h2>
         </div>
     </div>
-        <div class="row"> 
+    <div class="column">
+        <div class="carousel-wrapper-mobile">
+            <div class="row">
                 <div class="column">
-                    <div class="carousel-wrapper">
-                    <Carousel>
-                        {data.allFile.edges.map(({node}) => (
-                        <Carousel.Item>
-                            <Img fluid={node.childImageSharp.fluid} 
-                            className="d-block w-90"
-                            />
-                        </Carousel.Item>
-                        ))}
-                    </Carousel>
-                </div>
-                <div class="carousel-wrapper-mobile">
-                    <div class="row">
-                        <div class="column">
-                            {data.allFile.edges.map(({node}) => (
-                                        <Img fluid={node.childImageSharp.fluid} 
-                                        />
-                            ))}
-                        </div>
-                    </div>
+                    {data.allFile.edges.map(({node}) => (
+                                <Img fluid={node.childImageSharp.fluid} 
+                                />
+                    ))}
                 </div>
             </div>
         </div>
+    </div>
         <div class="button-wrapper" style={{textAlign: 'center'}}>
             <h2>Benieuwd wat ik voor jou kan betekenen?</h2>
             <Button CTA="Neem contact op!" class="btn btn-light" ctaLink="/contact"></Button>   

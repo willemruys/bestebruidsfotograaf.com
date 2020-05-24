@@ -58,7 +58,7 @@ export default function GalleryHomePage() {
         }
       }
     }
-      arthurEnYvonne: allFile(filter: {relativeDirectory: {eq: "gallery/Arthur_en_Yvonne"}}) {
+      arthurEnYvonne: allFile(filter: {relativeDirectory: {eq: "gallery/Arthur_en_Yvonne/Ceremony-5.jpg"}}) {
       edges {
         node {
           childImageSharp {
@@ -154,7 +154,7 @@ export default function GalleryHomePage() {
         <div class="column-gallery">
           <div>
             <div class="gallery-card-image-wrapper">
-              <Img fluid={data.arthurEnYvonne.edges[19].node.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.arthurEnYvonne.edges.node.childImageSharp.fluid} alt=""/>
               <div class="description">Arthur en Yvonne</div>
             </div>
           </div>
