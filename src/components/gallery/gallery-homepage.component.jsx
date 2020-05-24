@@ -10,97 +10,92 @@ export default function GalleryHomePage() {
   const data = useStaticQuery(graphql`
 
   query MyQuery {
-    arthurEnYvonne: allFile(filter: {relativePath: {eq: "gallery/Arthur_en_Yvonne/Ceremony-2.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # Arthur_en_Yvonne
+    arthurEnYvonne: file(relativePath: { eq: "gallery/Arthur_en_Yvonne/Ceremony-7.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
-    maartenEnHeiline: allFile(filter: {relativePath: {eq: "gallery/Maarten_en_Heiline/Ceremony-6.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # end
+    # Maarten_en_Heiline
+    maartenEnHeiline: file(relativePath: { eq: "gallery/Maarten_en_Heiline/Ceremony-28.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
-    manuelEnMarleen: allFile(filter: {relativePath: {eq: "gallery/Manuel_en_Marleen/Ceremony-2.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # end 
+    # Manuel_en_Marleen
+    manuelEnMarleen: file(relativePath: { eq: "gallery/Manuel_en_Marleen/Ceremony-30.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
-    martijnEnMarscha: allFile(filter: {relativePath: {eq: "gallery/Martijn_en_Marscha/Ceremony-2.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # end 
+    # Martijn_en_Marscha
+    martijnEnMarscha: file(relativePath: { eq: "gallery/Martijn_en_Marscha/Ceremony-40.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
-    mathijsEnNoortje: allFile(filter: {relativePath: {eq: "gallery/Mathijs_en_Noortje/Ceremony-5.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # end 
+    # Mathijs_en_Noortje
+    mathijsEnNoortje: file(relativePath: { eq: "gallery/Mathijs_en_Noortje/Ceremony-25.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
-    omerEnAyse: allFile(filter: {relativePath: {eq: "gallery/Omer_en_Ayse/Ceremony-3.jpg"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid {
-              src
-              srcSet
-              base64
-              aspectRatio
-            }
-          }
+    # end 
+    # Omer_en_Ayse
+    omerEnAyse: file(relativePath: { eq: "gallery/Omer_en_Ayse/Ceremony-2.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          src
+          srcSet
+          aspectRatio
+          base64
+          sizes
         }
       }
     }
   }
+    # end 
+    # end all queries
   `
 )
 
@@ -108,7 +103,6 @@ export default function GalleryHomePage() {
 
     <div class="site-section">
       <div class="container">
-
       <div class="row mb-5">
         <div class="col-md-7 text-center mx-auto">
           <h2 class="serif">Trouwalbums</h2>
@@ -118,7 +112,7 @@ export default function GalleryHomePage() {
       <div class="column-gallery">
         <div>
           <div class="gallery-card-image-wrapper">
-            <Img fluid={data.maartenEnHeiline.edges[0].node.childImageSharp.fluid} alt=""/>
+            <Img fluid={data.maartenEnHeiline.childImageSharp.fluid} alt=""/>
             <div class="description">Maarten en Heiline</div>
           </div>
           <div>
@@ -129,7 +123,7 @@ export default function GalleryHomePage() {
       <div class="column-gallery">
         <div>
           <div class="gallery-card-image-wrapper">
-            <Img fluid={data.mathijsEnNoortje.edges[0].node.childImageSharp.fluid} alt=""/>
+            <Img fluid={data.mathijsEnNoortje.childImageSharp.fluid} alt=""/>
             <div class="description">Mathijs en Noortje</div>
           </div>
           <div>
@@ -140,7 +134,7 @@ export default function GalleryHomePage() {
       <div class="column-gallery">
         <div>
           <div class="gallery-card-image-wrapper">
-            <Img fluid={data.omerEnAyse.edges[0].node.childImageSharp.fluid} alt=""/>
+            <Img fluid={data.omerEnAyse.childImageSharp.fluid} alt=""/>
             <div class="description">Omery en Ayse</div>
           </div>
           <div>
@@ -153,7 +147,7 @@ export default function GalleryHomePage() {
         <div class="column-gallery">
           <div>
             <div class="gallery-card-image-wrapper">
-              <Img fluid={data.arthurEnYvonne.edges[0].node.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.arthurEnYvonne.childImageSharp.fluid} alt=""/>
               <div class="description">Arthur en Yvonne</div>
             </div>
             <div>
@@ -164,7 +158,7 @@ export default function GalleryHomePage() {
         <div class="column-gallery">
           <div>
             <div class="gallery-card-image-wrapper">
-              <Img fluid={data.manuelEnMarleen.edges[0].node.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.manuelEnMarleen.childImageSharp.fluid} alt=""/>
               <div class="description">Manuel en Marleen</div>
             </div>
             <div>
@@ -175,7 +169,7 @@ export default function GalleryHomePage() {
         <div class="column-gallery">
           <div>
             <div class="gallery-card-image-wrapper">
-              <Img fluid={data.martijnEnMarscha.edges[0].node.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.martijnEnMarscha.childImageSharp.fluid} alt=""/>
               <div class="description">Martijn en Marscha</div>
             </div>
             <div>

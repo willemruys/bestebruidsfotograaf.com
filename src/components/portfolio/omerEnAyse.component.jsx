@@ -1,15 +1,13 @@
 import React from "react";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql} from 'gatsby';
-import Carousel from 'react-bootstrap/Carousel';
-import Button from "../button/button.component"
-import './portfolio.styles.css'
+import Button from "../button/button.component";
+import './portfolio.styles.css';
 
 
 export default function Gallery (props) {
 
   const data = useStaticQuery(graphql`
-
   query omerEnAyse {
     allFile(filter: {relativeDirectory: {eq: "gallery/Omer_en_Ayse"}}) {
       edges {

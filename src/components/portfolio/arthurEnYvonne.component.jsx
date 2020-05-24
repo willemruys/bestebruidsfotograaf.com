@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql} from 'gatsby';
-import Carousel from 'react-bootstrap/Carousel';
 import Button from "../button/button.component"
 import './portfolio.styles.css'
 
