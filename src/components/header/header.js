@@ -17,6 +17,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/about" activeStyle={{textDecoration: 'underline' }}>About</Link>
       <Link to="/portfolio" activeStyle={{textDecoration: 'underline' }}>Portfolio</Link>
       <Link to="/contact" activeStyle={{textDecoration: 'underline' }}>Contact</Link>
+      <Link to="/tarieven" activeStyle={{textDecoration: 'underline' }}>Tarieven</Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

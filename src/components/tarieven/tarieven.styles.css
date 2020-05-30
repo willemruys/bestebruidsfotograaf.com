@@ -1,0 +1,72 @@
+
+  
+
+  .row-prices {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create three columns of equal width */
+  .columns-prices {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header-prices-prices */
+  .price .header-prices {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+
+  .price .green {
+      background-color: #4CAF50;
+      font-size: 20px;
+  }
+
+  .price .gold {
+      background-color: #E6BB2E;
+      font-size: 20px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .columns-prices {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
