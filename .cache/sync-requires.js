@@ -5,7 +5,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/willemruys/Websites/bestebruidsfotograaf/blog/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/willemruys/Websites/bestebruidsfotograaf/blog/src/pages/404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("/Users/willemruys/Websites/bestebruidsfotograaf/blog/src/pages/about.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/Users/willemruys/Websites/bestebruidsfotograaf/blog/src/pages/contact.js"))),
