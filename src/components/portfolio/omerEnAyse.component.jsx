@@ -13,12 +13,12 @@ export default function GalleryomerEnAyse (props) {
       edges {
         node {
           childImageSharp {
-            thumb: fluid(maxWidth: 270, maxHeight: 270) {
+            thumb: fluid(maxWidth: 270, maxHeight: 270, quality: 5) {
               src
               srcSet
               aspectRatio
             }
-            full: fluid(maxWidth: 1024) {
+            full: fluid(maxWidth: 1024, quality: 5) {
               src
               srcSet
               aspectRatio
