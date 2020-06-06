@@ -17,11 +17,15 @@ export default function GalleryManuelEnMarleen (props) {
               src
               srcSet
               aspectRatio
+              base64
+              sizes
             }
             full: fluid(maxWidth: 1024) {
               src
               srcSet
               aspectRatio
+              base64
+              sizes
             }
           }
         }

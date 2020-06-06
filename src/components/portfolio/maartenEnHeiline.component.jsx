@@ -17,11 +17,17 @@ export default function GalleryMaartenEnHeiline (props) {
               src
               srcSet
               aspectRatio
+              base64
+              sizes
+              originalImg
             }
             full: fluid(maxWidth: 1024) {
               src
               srcSet
               aspectRatio
+              base64
+              sizes
+              originalImg
             }
           }
         }
