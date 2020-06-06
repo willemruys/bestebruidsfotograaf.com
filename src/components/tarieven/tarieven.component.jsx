@@ -18,8 +18,7 @@ export default function tarievenComponent() {
             <ul className="price">
                 <li className="grey">€995 / per dagsessie</li>
                 <li>4 uur fotografie</li>
-                <li>Een album met tenminste 200 hoge resolutie foto's</li>
-                <li>Foto's ook digitaal aangeleverd</li>
+                <li>Foto's digitaal aangeleverd</li>
                 <li>Alle foto's met zorg bewerkt op kleur, contrast en scherpte</li>
                 <li>20 uur selectie en editing tijd</li>
                 <li>Reiskosten tot max. 100 km inbegrepen</li>
@@ -33,8 +32,7 @@ export default function tarievenComponent() {
             <ul className="price">
                 <li className="green">€1495 / per dagsessie</li>
                 <li>6 uur fotografie</li>
-                <li>Een album met tenminste 300 hoge resolutie foto's</li>
-                <li>Foto's ook digitaal aangeleverd</li>
+                <li>Foto's digitaal aangeleverd</li>
                 <li>Alle foto's met zorg bewerkt op kleur, contrast en scherpte</li>
                 <li>30 uur selectie en editing tijd</li>
                 <li>Reiskosten tot max. 150 km inbegrepen</li>
@@ -48,8 +46,7 @@ export default function tarievenComponent() {
             <ul className="price">
                 <li className="gold">€2000 / per dagsessie</li>
                 <li>8 uur fotografie</li>
-                <li>Een album met tenminste 400 hoge resolutie foto's</li>
-                <li>Foto's ook digitaal aangeleverd</li>
+                <li>Foto's digitaal aangeleverd</li>
                 <li>Alle foto's met zorg bewerkt op kleur, contrast en scherpte</li>
                 <li>40 uur selectie en editing tijd</li>
                 <li>Reiskosten tot max. 200 km inbegrepen</li>

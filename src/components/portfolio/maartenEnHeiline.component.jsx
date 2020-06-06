@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql} from 'gatsby';
-import Button from "../button/button.component"
+import Button from "../button/button.component";
 import './portfolio.styles.css';
 
 import Gallery from '@browniebroke/gatsby-image-gallery';
@@ -9,7 +9,7 @@ import '@browniebroke/gatsby-image-gallery/dist/style.css';
 export default function GalleryMaartenEnHeiline (props) {
   const data = useStaticQuery (graphql`
   query ImagesForGalleryMaartenEnHeiline {
-    allFile (filter: {relativeDirectory: {eq: "gallery/Maarten_en_Heiline"}} sort: { fields: name }) {
+    allFile(filter: {relativeDirectory: {eq: "gallery/Maarten_en_Heiline"}}, sort: {fields: name, order: ASC}) {
       edges {
         node {
           childImageSharp {

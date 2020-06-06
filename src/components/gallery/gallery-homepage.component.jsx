@@ -11,7 +11,7 @@ export default function GalleryHomePage() {
 
   query MyQuery {
     # Arthur_en_Yvonne
-    arthurEnYvonne: file(relativePath: { eq: "gallery/Arthur_en_Yvonne/Ceremony-7.jpg" }) {
+    arthurEnYvonne: file(relativePath: { eq: "gallery/Arthur_en_Yvonne/Ceremony-01.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid {
@@ -81,7 +81,7 @@ export default function GalleryHomePage() {
     }
     # end 
     # Omer_en_Ayse
-    omerEnAyse: file(relativePath: { eq: "gallery/Omer_en_Ayse/Ceremony-2.jpg" }) {
+    omerEnAyse: file(relativePath: { eq: "gallery/Omer_en_Ayse/Ceremony-02.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid {
